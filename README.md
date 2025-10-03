@@ -43,7 +43,7 @@ The best-performing model used the following setup:
 
 ---
 
-## 🔍 Comparison with Fine-tuning
+## Comparison with Fine-tuning
 Training ViT **from scratch** is limited by dataset size (~50K images).  
 When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accuracy:
 
