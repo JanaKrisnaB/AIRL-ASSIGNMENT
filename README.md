@@ -62,3 +62,5 @@ When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accu
 - **Early stopping** prevents over-training and saves compute
 - Tested **Shifted Patch Tokenization (SPT)** to inject local inductive bias.
 ---
+
+# Text-Driven Image Segmentation with SAM 2 
