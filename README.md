@@ -82,6 +82,7 @@ Here’s how it works:
 
 * Works best with clear, specific text prompts.
 * May detect multiple objects if the prompt applies to more than one region.
+* Struggles with very fine boundaries, transparency, or closely packed items.
 * Restricted to objects GroundingDINO can recognize.
-* Can be heavy to run on Colab for large images.
+* Imperfect masks in output
 
