@@ -26,7 +26,7 @@ The best-performing model used the following setup:
 - **Transformer depth:** 8 layers  
 - **Attention heads:** 6  
 - **MLP hidden dim:** 768  
-- **Dropout:** 0.15  
+- **Dropout:** 0.1
 - **Optimizer:** AdamW (`lr = 5e-4`, weight decay = 0.05)  
 - **Scheduler:** Cosine decay with 5 warmup epochs  
 - **Label smoothing:** 0.1  
