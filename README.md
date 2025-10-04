@@ -61,6 +61,7 @@ When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accu
 - **Epochs (50):** enough for convergence on CIFAR-10; longer runs did not give major gains.
 - **Early stopping** prevents over-training and saves compute
 - Tested **Shifted Patch Tokenization (SPT)** to inject local inductive bias.
+- Used **non-overlapping patches** (kernel_size = stride = 16) — faster and GPU-efficient, balancing accuracy and computation.
 ---
 
 # Text-Driven Image Segmentation with SAM 2 
