@@ -64,3 +64,23 @@ When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accu
 ---
 
 # Text-Driven Image Segmentation with SAM 2 
+
+### Pipeline
+
+The notebook uses **LangSAM**, which combines **GroundingDINO** and **SAM 2**, to perform text-based image segmentation.
+
+Here’s how it works:
+
+1. An image is loaded.
+2. The user gives a text prompt (e.g., *“wheel”*).
+3. GroundingDINO finds the parts of the image that match the prompt.
+4. SAM 2 takes these regions and generates detailed masks.
+5. The final mask is overlaid on the image for visualization.
+
+### Limitations
+
+* Works best with clear, specific text prompts.
+* May detect multiple objects if the prompt applies to more than one region.
+* Restricted to objects GroundingDINO can recognize.
+* Can be heavy to run on Colab for large images.
+
