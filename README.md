@@ -55,13 +55,13 @@ When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accu
 - CIFAR-10 resized to **128×128** (instead of 224×224) for faster training
 - **Patch size 16×16:** balanced GPU utilization & accuracy (smaller patches = better detail but slower).  
 - **Depth/Width trade-off:** 8 layers, 192-dim chosen for higher capacity without Out Of Memory.  
-- **Augmentation (AutoAugment, Cutout):** boosted generalization by +3–4%.  
+- **Augmentation (AutoAugment, Cutout):** boosted generalization by +3–4%.
+- Used **non-overlapping patches** (kernel_size = stride = 16) — faster and GPU-efficient, balancing accuracy and computation.
 - **Optimizer + Cosine schedule + warmup:** stabilized training and improved convergence.  
 - **Label smoothing:** reduced overconfidence, improving test accuracy.  
 - **Epochs (50):** enough for convergence on CIFAR-10; longer runs did not give major gains.
 - **Early stopping** prevents over-training and saves compute
 - Tested **Shifted Patch Tokenization (SPT)** to inject local inductive bias.
-- Used **non-overlapping patches** (kernel_size = stride = 16) — faster and GPU-efficient, balancing accuracy and computation.
 ---
 
 # Text-Driven Image Segmentation with SAM 2 
