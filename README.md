@@ -54,7 +54,7 @@ When pretrained on large datasets and fine-tuned, ViTs achieve near-perfect accu
 ## Analysis
 - CIFAR-10 resized to **128×128** (instead of 224×224) for faster training
 - **Patch size 16×16:** balanced GPU utilization & accuracy (smaller patches = better detail but slower).  
-- **Depth/Width trade-off:** 8 layers, 192-dim chosen for higher capacity without OOM.  
+- **Depth/Width trade-off:** 8 layers, 192-dim chosen for higher capacity without Out Of Memory.  
 - **Augmentation (AutoAugment, Cutout):** boosted generalization by +3–4%.  
 - **Optimizer + Cosine schedule + warmup:** stabilized training and improved convergence.  
 - **Label smoothing:** reduced overconfidence, improving test accuracy.  
